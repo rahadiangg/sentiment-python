@@ -1,7 +1,9 @@
 version: '3.8'
 services:
   python-sentiment:
-    image: rahadiangg/sentiment:python
+    build: 
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - ./:/usr/src/app
     networks:
